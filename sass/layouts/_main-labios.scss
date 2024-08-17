@@ -1,0 +1,105 @@
+.main-labios {
+    padding: $padding-default;
+    background-image: url(../assets/labios.jpg.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: $text-color;
+    @include flex-center;
+    flex-direction: column;
+
+    .container-labios {
+        text-align: center;
+        color: $white-color;
+        padding: 40px;
+        width: 100%;
+        max-width: 1200px;
+        min-height: 100vh;
+        margin: 0 auto;
+        @include border-radius($border-radius);
+        @include box-shadow($box-shadow);
+    }
+
+    section {
+        margin-bottom: 40px;
+        background-color: rgba(255, 248, 252, 0.5); 
+        padding: 30px;
+        @include border-radius($border-radius);
+
+        .labios {
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+
+            ul {
+                list-style-position: inside;
+                text-align: left;
+            }
+        }
+    }
+
+    .productos-labios {
+        width: 90%;
+        max-width: 1200px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background-color: $white-color;
+        @include box-shadow($card-box-shadow);
+        @include border-radius($border-radius);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        .galeria img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-texts {
+            padding: 20px;
+            text-align: center;
+
+            .title {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+                color: #333;
+            }
+
+            .paragraph {
+                margin-bottom: 20px;
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #666;
+            }
+
+            .cta {
+                display: block;
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+                background: var(--color-btn);
+                color: $white-color;
+                padding: 15px;
+                @include border-radius(6px);
+                text-align: center;
+                text-decoration: none;
+                transition: background 0.3s ease, transform 0.3s ease;
+
+                &:hover {
+                    background: $secondary-color;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
