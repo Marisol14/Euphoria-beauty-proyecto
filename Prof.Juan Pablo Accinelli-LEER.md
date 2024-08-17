@@ -9,3 +9,4 @@ Cambios realizados:
 5) Aplique etiquetas meta para optimizar el SEO.
 6) Aplique bootstrap en el "footer". en los 5 html y un carrusel en el home.
 7) Se instalo Sass, mediante archivos json, para una instalacion mas provechosa.
+8) Aplique animaciones en las cards y en el logo de la barra de navegación 
